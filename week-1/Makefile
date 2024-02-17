@@ -6,6 +6,10 @@ help:
 
 all:
 	make -C example clean test build
+	make -C vector-fruit-salad clean test build
 
 example: ## Build example project
 	make -C example clean test build
+
+vector-fruit-salad: ## Build vector-fruit-salad project
+	make -C vector-fruit-salad clean test build

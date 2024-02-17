@@ -7,9 +7,13 @@ help:
 clean: ## Remove all build artifacts
 	cargo clean
 
-format: ## Format code
+lint: ## Lint code
 	@rustup component add rustfmt 2> /dev/null
 	cargo clippy 
+
+format: ## Format code
+	@rustup component add rustfmt 2> /dev/null
+	cargo fmt
 
 test: ## Run tests
 	cargo test
@@ -19,6 +23,9 @@ doc: ## Generate documentation
 
 build: ## Build
 	cargo build
+
+run: ## Run
+	cargo run
 
 bump: ## Bump version
 	@echo "Current version: $$(cargo pkgid | grep -o '#.*' | cut -d# -f2)"
