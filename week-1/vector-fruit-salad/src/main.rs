@@ -18,20 +18,30 @@
 //! This functionality is useful when you want to access both the index and the value of each element in a collection, for example,
 //! when you want to print out the index along with the value in a formatted output.
 
+use rand::rngs::ThreadRng;
 use rand::seq::SliceRandom;
-use rand::thread_rng;
+use rand::{thread_rng, Rng};
+
+// The static array of all fruits
+const FRUITS: [&str; 10] = ["Orange", "Apple", "Banana", "Pear", "Grape", "Watermelon", "Strawberry", "Cherry", "Plum", "Peach"];
 
 fn main() {
-    let mut fruit = ["Orange", "Apple", "Banana", "Pear", "Grape"];
-
-    // Scramble (shuffle) the vector
+    // Create a random number generator
     let mut rng = thread_rng();
-    fruit.shuffle(&mut rng);
 
-    // Challenge(2): The SliceRandom trait provides a method choose(&self, rng: &R) -> Option<&T>. 
-    // Can you use this to select a random fruit from the salad?
+    // Get a random number between 1 and FRUITS.len()
+    let fruit_count = rng.gen_range(1..=FRUITS.len());
+
+    // Challenge(3): Select `fruit_count` random fruits 
+    let mut fruit = select_random_fruits(fruit_count, FRUITS.as_slice(), &mut rng);
+
+    // Challenge(2): Select a random fruit from the salad
     let random_fruit = fruit.choose(&mut rng);
     println!("Random fruit: {}", random_fruit.unwrap());
+
+
+    // Scramble (shuffle) the vector
+    fruit.shuffle(&mut rng);
 
     // Print out the fruit salad
     println!("Fruit salad:");
@@ -42,4 +52,14 @@ fn main() {
             println!("{}", item);
         }
     }
+}
+
+// Select `fruit_count` random fruits
+fn select_random_fruits(fruit_count: usize, fruits: &[&'static str], rng: &mut ThreadRng) -> Vec<&'static str> {
+    let mut selected_fruits = Vec::new();
+    for _ in 0..fruit_count {
+        let random_index = rng.gen_range(0..fruits.len());
+        selected_fruits.push(fruits[random_index]);
+    }
+    selected_fruits
 }
