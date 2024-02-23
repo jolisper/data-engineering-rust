@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    "week-1/vector-fruit-salad",
+    "week-1/hashmap-count",
+    "week-1/hashmap-language",
+    "week-1/vecdeque-fruit-salad",
+]
