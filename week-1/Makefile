@@ -8,6 +8,7 @@ all:
 	make -C example clean test build
 	make -C vector-fruit-salad clean test build
 	make -C vecdeque-fruit-salad clean test build
+	make -C linked-list-fruit-salad clean test build
 	make -C hashmap-count clean test build
 	make -C hashmap-language clean test build
 
