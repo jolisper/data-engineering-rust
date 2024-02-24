@@ -1,11 +1,6 @@
 # data-engineering-rust
 Data Engineering with Rust Course (Duke University)
 
-# Overview
-This repository is a sandbox for code created in the Rust data engineering course. Is part of the lab from week 1 that set the goal: 
-
-In this lab, you will create a central Git repository to serve as a sandbox for code created in the Rust data engineering course. You will structure the repository, set up automation, and prepare documentation to support collaboration and code sharing during the course.""
-
 # Learning Goals
 ## Week 1
 In this first week, we will delve into Rust's powerful and flexible data structures. You'll gain insights into different types of sequences, maps, and sets, discovering their distinctive characteristics and potential use cases. Through hands-on exercises and projects, you'll apply these concepts in practical scenarios. This includes creating a Fruit Salad CLI with a variety of sequences, comparing languages using both HashMap and BTreeMap, managing unique fruits with HashSet and BTreeSet, and prioritizing data using a Binary Heap. These experiences will equip you with a robust understanding of how to use Rust data structures effectively for data organization and manipulation, forming a vital foundation for the weeks ahead.
