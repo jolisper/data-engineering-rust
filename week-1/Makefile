@@ -1,10 +1,10 @@
 SHELL := /bin/bash
-.PHONY: help example all vector-fruit-salad vecdeque-fruit-salad linked-list-fruit-salad hashmap-count hashmap-language cli-salad
+.PHONY: help example all vector-fruit-salad vecdeque-fruit-salad linked-list-fruit-salad hashmap-count hashmap-language cli-salad rust-collections-docs
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-all: example vector-fruit-salad vecdeque-fruit-salad linked-list-fruit-salad hashmap-count hashmap-language cli-salad ## Build all projects
+all: example vector-fruit-salad vecdeque-fruit-salad linked-list-fruit-salad hashmap-count hashmap-language cli-salad rust-collections-docs ## Build all projects
 
 example: ## Build example project
 	make -C example clean test build
