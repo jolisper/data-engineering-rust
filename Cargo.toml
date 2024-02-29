@@ -7,7 +7,8 @@ members = [
     "week-1/vector-fruit-salad",
     "week-1/vecdeque-fruit-salad",
     "week-1/linked-list-fruit-salad", 
-    "week-1/cli-salad",
+    "week-1/cli-salad", 
+    "week-1/rust-collections-docs",
 ]
 
 resolver = "2"

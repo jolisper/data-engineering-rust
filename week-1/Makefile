@@ -26,3 +26,6 @@ hashmap-language: ## Build hashmap-language project
 
 cli-salad: ## Build cli-salad project
 	make -C cli-salad clean test build
+
+rust-collections-docs: ## Build rust-collections-docs
+	make -C rust-collections-docs clean test build
