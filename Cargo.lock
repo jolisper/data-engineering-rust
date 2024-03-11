@@ -302,6 +302,13 @@ name = "hashmap-language"
 version = "0.1.0"
 
 [[package]]
+name = "hashset-fruit"
+version = "0.1.0"
+dependencies = [
+ "rand",
+]
+
+[[package]]
 name = "heck"
 version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
