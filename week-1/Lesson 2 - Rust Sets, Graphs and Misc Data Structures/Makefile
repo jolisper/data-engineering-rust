@@ -1,10 +1,10 @@
 SHELL := /bin/bash
-.PHONY: help russian-troll-tweets when-use-rust-set rust-iterators neo4j-data-science-lib graph-centrality-ufc hashset-fruit btreeset-fruit binaryheap-fruit pagerank lisbon-shortest-path community-detection
+.PHONY: help russian-troll-tweets when-use-rust-set rust-iterators neo4j-data-science-lib graph-centrality-ufc hashset-fruit btreeset-fruit binaryheap-fruit pagerank lisbon-shortest-path community-detection graph-visualize
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-all: russian-troll-tweets when-use-rust-set rust-iterators neo4j-data-science-lib graph-centrality-ufc hashset-fruit btreeset-fruit binaryheap-fruit pagerank lisbon-shortest-path community-detection ## Build all projects
+all: russian-troll-tweets when-use-rust-set rust-iterators neo4j-data-science-lib graph-centrality-ufc hashset-fruit btreeset-fruit binaryheap-fruit pagerank lisbon-shortest-path community-detection graph-visualize ## Build all projects
 
 russian-troll-tweets: ## Build russian-troll-tweets project
 	make -C russian-troll-tweets clean test build
@@ -38,3 +38,6 @@ lisbon-shortest-path: ## Build libon-shortest-path project
 
 community-detection: ## Build community-detection project
 	make -C community-detection clean test build
+
+graph-visualize: ## Build graph-visualize project
+	make -C graph-visualize clean test build
