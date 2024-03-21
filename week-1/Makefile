@@ -10,4 +10,7 @@ m1-rust-sequences-and-maps: ## Build Module 1 - Rust Sequences and Maps
 l2-rust-sets-graphs-and-misc-data-structures: ## Build Lesson 2 - Rust Sets, Graphs and Misc Data Structures
 	make -C "Lesson 2 - Rust Sets, Graphs and Misc Data Structures" all
 
+final-week-reflection: ## Build Final Week Reflection
+	make -C "Final Week Reflection" all
+
 all: m1-rust-sequences-and-maps l2-rust-sets-graphs-and-misc-data-structures ## Build all
