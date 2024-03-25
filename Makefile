@@ -8,16 +8,16 @@ week-1: ## Build week 1
 	make -C week-1 all 
 
 week-2: ## Build week 2
-	make -C week-2
+	make -C week-2 all
 
 week-3: ## Build week 3
-	make -C week-3
+	make -C week-3 all
 
 week-4: ## Build week 4
-	make -C week-4
+	make -C week-4 all
 
 all: ## Build all
 	make -C week-1 all
-	@#make -C week-2
-	@#make -C week-3
-	@#make -C week-4
+	make -C week-2 all
+	@#make -C week-3 all
+	@#make -C week-4 all
