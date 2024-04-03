@@ -146,7 +146,7 @@
 //! without the need for a garbage collector, by leveraging strict compile-time
 //! checks and scope-based resource lifetimes.
 //!
-//! Discussion Prompts:
+//! # Discussion Prompts:
 //!
 //! # What are the main advantages and disadvantages of OBRM vs. garbage collection?
 //!
