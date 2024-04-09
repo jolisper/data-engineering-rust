@@ -670,6 +670,10 @@ name = "russian-troll-tweets"
 version = "0.1.0"
 
 [[package]]
+name = "rust-crypto_hashes"
+version = "0.1.0"
+
+[[package]]
 name = "rust-iterators"
 version = "0.1.0"
 
