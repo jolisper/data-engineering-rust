@@ -678,6 +678,10 @@ name = "rust-iterators"
 version = "0.1.0"
 
 [[package]]
+name = "rust-software-security"
+version = "0.1.0"
+
+[[package]]
 name = "rust_collections_docs"
 version = "0.1.0"
 dependencies = [
