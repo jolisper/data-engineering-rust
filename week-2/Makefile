@@ -7,4 +7,7 @@ help:
 l1-rust-safety-and-security-features: ## Build Lesson 1 - Rust Safety and Security Features
 	make -C "Lesson 1 - Rust Safety and Security Features" all
 
-all: l1-rust-safety-and-security-features ## Build all
+l2-security-programming-with-rust: ## Build Lesson 2 - Security Programming with Rust
+	make -C "Lesson 2 - Security Programming with Rust" all
+
+all: l1-rust-safety-and-security-features l2-security-programming-with-rust ## Build all
