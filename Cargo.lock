@@ -300,6 +300,10 @@ name = "data-race"
 version = "0.1.0"
 
 [[package]]
+name = "data-races-race-conditions"
+version = "0.1.0"
+
+[[package]]
 name = "decoder-ring"
 version = "0.1.0"
 dependencies = [

@@ -34,6 +34,6 @@ members = [
     "week-2/Lesson 1 - Rust Safety and Security Features/w2l1-lesson-reflections",
     "week-2/Lesson 2 - Security Programming with Rust/rust-crypto_hashes",
     "week-2/Lesson 2 - Security Programming with Rust/rust-software-security",
-    "week-2/Lesson 2 - Security Programming with Rust/decoder-ring", "week-2/Lesson 2 - Security Programming with Rust/w2l2-lesson-reflections", "week-2/Lesson 3 - Concurrency with Rust/concurrency-parallelism",
+    "week-2/Lesson 2 - Security Programming with Rust/decoder-ring", "week-2/Lesson 2 - Security Programming with Rust/w2l2-lesson-reflections", "week-2/Lesson 3 - Concurrency with Rust/concurrency-parallelism", "week-2/Lesson 3 - Concurrency with Rust/data-races-race-conditions",
 ]
 resolver = "2"
