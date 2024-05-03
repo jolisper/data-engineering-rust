@@ -1,10 +1,10 @@
 SHELL := /bin/bash
-.PHONY: help all concurrency-parallelism data-races-race-conditions send-sync atomics
+.PHONY: help all concurrency-parallelism data-races-race-conditions send-sync atomics distributed-computing-concurrency
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-all: concurrency-parallelism data-races-race-conditions send-sync atomics ## Build all projects
+all: concurrency-parallelism data-races-race-conditions send-sync atomics distributed-computing-concurrency ## Build all projects
 
 concurrency-parallelism: ## Build concurrency-parallelism project
 	make -C "concurrency-parallelism" clean test build
@@ -17,3 +17,6 @@ send-sync: ## Build send-sync project
 
 atomics: ## Build atomic project
 	make -C "atomics" clean test build
+
+distributed-computing-concurrency: ## Build distributed-computing-concurrency project
+	make -C "distributed-computing-concurrency" clean test build
