@@ -1,10 +1,10 @@
 SHELL := /bin/bash
-.PHONY: help all concurrency-parallelism data-races-race-conditions send-sync atomics distributed-computing-concurrency challenges-opportunities-distributed dining-philosophers
+.PHONY: help all concurrency-parallelism data-races-race-conditions send-sync atomics distributed-computing-concurrency challenges-opportunities-distributed dining-philosophers w2l3-lesson-reflections
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-all: concurrency-parallelism data-races-race-conditions send-sync atomics distributed-computing-concurrency challenges-opportunities-distributed dining-philosophers ## Build all projects
+all: concurrency-parallelism data-races-race-conditions send-sync atomics distributed-computing-concurrency challenges-opportunities-distributed dining-philosophers w2l3-lesson-reflections ## Build all projects
 
 concurrency-parallelism: ## Build concurrency-parallelism project
 	make -C "concurrency-parallelism" clean test build
@@ -26,3 +26,6 @@ challenges-opportunities-distributed: ## Build challenges-opportunities-distribu
 
 dining-philosophers: ## Build dining-philosophers project
 	make -C "dining-philosophers" clean test build
+
+w2l3-lesson-reflections: ## Build w2l3-lesson-reflections project
+	make -C "w2l3-lesson-reflections" clean test build
