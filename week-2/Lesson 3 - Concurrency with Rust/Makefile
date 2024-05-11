@@ -1,10 +1,10 @@
 SHELL := /bin/bash
-.PHONY: help all concurrency-parallelism data-races-race-conditions send-sync atomics distributed-computing-concurrency challenges-opportunities-distributed dining-philosophers w2l3-lesson-reflections
+.PHONY: help all concurrency-parallelism data-races-race-conditions send-sync atomics distributed-computing-concurrency challenges-opportunities-distributed dining-philosophers w2l3-lesson-reflections rayon-challenge
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-all: concurrency-parallelism data-races-race-conditions send-sync atomics distributed-computing-concurrency challenges-opportunities-distributed dining-philosophers w2l3-lesson-reflections ## Build all projects
+all: concurrency-parallelism data-races-race-conditions send-sync atomics distributed-computing-concurrency challenges-opportunities-distributed dining-philosophers w2l3-lesson-reflections rayon-challenge ## Build all projects
 
 concurrency-parallelism: ## Build concurrency-parallelism project
 	make -C "concurrency-parallelism" clean test build
@@ -29,3 +29,6 @@ dining-philosophers: ## Build dining-philosophers project
 
 w2l3-lesson-reflections: ## Build w2l3-lesson-reflections project
 	make -C "w2l3-lesson-reflections" clean test build
+
+rayon-challenge: ## Build rayon-challenge project
+	make -C "rayon-challenge" clean test build
