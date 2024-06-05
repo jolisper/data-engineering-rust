@@ -307,6 +307,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "csv-cookbook"
+version = "0.1.0"
+
+[[package]]
 name = "csv-core"
 version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
