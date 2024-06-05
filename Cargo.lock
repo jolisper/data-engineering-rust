@@ -316,6 +316,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "csv-writer"
+version = "0.1.0"
+dependencies = [
+ "csv",
+ "serde",
+]
+
+[[package]]
 name = "ctrlc"
 version = "3.4.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"

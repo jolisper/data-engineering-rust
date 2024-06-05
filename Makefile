@@ -19,5 +19,5 @@ week-4: ## Build week 4
 all: ## Build all
 	make -C week-1 all
 	make -C week-2 all
-	@#make -C week-3 all
+	make -C week-3 all
 	@#make -C week-4 all
