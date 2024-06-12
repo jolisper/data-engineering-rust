@@ -786,6 +786,10 @@ name = "rust-iterators"
 version = "0.1.0"
 
 [[package]]
+name = "rust-jupyter-notebook"
+version = "0.1.0"
+
+[[package]]
 name = "rust-software-security"
 version = "0.1.0"
 

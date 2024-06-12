@@ -14,7 +14,10 @@
 				"Codeium.codeium",
 				"ms-vscode.makefile-tools",
 				"ms-azuretools.vscode-docker",
-				"mechatroner.rainbow-csv"
+				"mechatroner.rainbow-csv",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.vscode-jupyter-powertoys",
+				"ms-toolsai.jupyter-hub"
 			]
 		}
 	}
