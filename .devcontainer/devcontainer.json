@@ -17,7 +17,10 @@
 				"mechatroner.rainbow-csv",
 				"ms-toolsai.jupyter",
 				"ms-toolsai.vscode-jupyter-powertoys",
-				"ms-toolsai.jupyter-hub"
+				"ms-toolsai.jupyter-hub",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.debugpy"
 			]
 		}
 	}
